@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07111f">
+<title>ZYRO</title>
+<link rel="stylesheet" href="/style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div class="app">
+<header><div class="logo">Z<span>YRO</span></div><span class="pill">BETA</span></header>
+<main>
+<section id="home" class="page active">
+<div class="hero"><small>Your balance</small><strong id="points">0</strong><em>ZYRO POINTS</em><p id="streak">Daily streak: 0</p><button id="checkin">✓ Daily check-in +25</button></div>
+<h2>Earn more</h2>
+<div class="grid">
+<button data-page="tasks"><b>🎯</b><strong>Tasks</strong><small>Complete tasks</small></button>
+<button data-page="referrals"><b>👥</b><strong>Invite</strong><small>Refer friends</small></button>
+<button data-page="leaderboard"><b>🏆</b><strong>Rank</strong><small>Leaderboard</small></button>
+<button data-page="rewards"><b>🎁</b><strong>Rewards</strong><small>Catalog</small></button>
+</div>
+<div class="notice">ZYRO Beta: points shown here are demo/early-access points until production rewards are officially enabled.</div>
+</section>
+
+<section id="tasks" class="page"><div class="head"><h1>Tasks</h1><small>Earn points</small></div><div id="tasksList"></div></section>
+<section id="referrals" class="page"><div class="head"><h1>Referrals</h1><small>Invite friends</small></div>
+<div class="card"><small>Your referral code</small><h2 id="refCode">ZYRO-DEMO</h2><p>Share your code. Production referral tracking will be verified on the server.</p><button id="copy">Copy code</button></div></section>
+<section id="leaderboard" class="page"><div class="head"><h1>Leaderboard</h1><small>This week</small></div><div class="card" id="leaders"></div></section>
+<section id="rewards" class="page"><div class="head"><h1>Rewards</h1><small>Catalog</small></div><div id="rewardsList"></div><div class="notice">No cash value in Beta. Redemption rules will be published before any real reward launch.</div></section>
+</main>
+<nav>
+<button class="active" data-page="home">⌂<span>Home</span></button>
+<button data-page="tasks">✓<span>Tasks</span></button>
+<button data-page="leaderboard">🏆<span>Rank</span></button>
+<button data-page="rewards">🎁<span>Rewards</span></button>
+</nav>
+<div id="toast"></div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

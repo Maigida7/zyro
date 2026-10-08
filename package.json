@@ -1,0 +1,7 @@
+{
+  "name":"zyro-telegram-mini-app",
+  "private":true,
+  "version":"1.0.0",
+  "scripts":{"dev":"wrangler dev","deploy":"wrangler deploy","db:migrate":"wrangler d1 migrations apply zyro-db --local"},
+  "devDependencies":{"wrangler":"latest"}
+}
